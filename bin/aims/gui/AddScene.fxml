@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0"
+	prefWidth="1075.0" xmlns="http://javafx.com/javafx"
+	xmlns:fx="http://javafx.com/fxml"
+	fx:controller="aims.gui.Controller">
+	<children>
+		<Button layoutX="178.0" layoutY="557.0" mnemonicParsing="false"
+			onAction="#backToMenu" text="Back to menu">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Button>
+		<Label layoutX="422.0" layoutY="37.0" text="Available Items">
+			<font>
+				<Font size="30.0" />
+			</font>
+		</Label>
+		<ListView fx:id="myListView" layoutX="608.0" layoutY="106.0"
+			prefHeight="425.0" prefWidth="385.0">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</ListView>
+		<Label fx:id="myLabel" alignment="CENTER" layoutX="109.0"
+			layoutY="105.0" prefHeight="425.0" prefWidth="302.0"
+			style="-fx-border-color: #039dfc;" text="Select an item"
+			textAlignment="CENTER">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Button layoutX="768.0" layoutY="557.0" mnemonicParsing="false"
+			onAction="#addToOrder" text="Add">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>
